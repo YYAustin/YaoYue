@@ -22,19 +22,25 @@ public class MainActivity extends AppCompatActivity {
             actionbar.hide();
         }
     }
+    //无法实现新建标题栏的现实？？？？？？？？？？？
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.toolbar, menu);
+        return true;
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.backup:
+            case R.id.backup_item:
                 Toast.makeText(this, "you clicked Backup", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.delete:
+            case R.id.delete_item:
                 Toast.makeText(this, "you clicked Delete", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.setting:
-                Toast.makeText(this, "you clicked Setti", Toast.LENGTH_SHORT).show();
+            case R.id.setting_item:
+                Toast.makeText(this, "you clicked Setting", Toast.LENGTH_SHORT).show();
                 break;
+            default:
         }
         return true;
     }

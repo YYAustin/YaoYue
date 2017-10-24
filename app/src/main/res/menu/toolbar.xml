@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/backup"
+        android:id="@+id/backup_item"
         android:icon="@mipmap/ic_launcher"
         android:title="Backup"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/delete"
-        android:icon="@mipmap/ic_launcher_round"
+        android:id="@+id/delete_item"
+        android:icon="@mipmap/ic_launcher"
         android:title="Delete"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
     <item
-        android:id="@+id/setting"
+        android:id="@+id/setting_item"
         android:icon="@mipmap/ic_launcher"
         android:title="Setting"
         app:showAsAction="never"/>
